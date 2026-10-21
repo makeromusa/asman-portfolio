@@ -1,0 +1,43 @@
+import { Project } from "@/types";
+
+export const projects: Project[] = [
+  {
+    id: "portfolio-platform",
+    title: "Engineering Portfolio & Tech Blog",
+    description: "Modern, responsive software engineering portfolio and MDX blog built following strict SDLC methodology.",
+    longDescription: "Engineered from formal requirements gathering to system design, component breakdown, and automated deployment. Features dark/light theming, modular UI architecture, and type-safe data modeling.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
+    category: "Full-Stack",
+    liveUrl: "https://vercel.com",
+    githubUrl: "https://github.com",
+    imageUrl: "/images/projects/portfolio.png",
+    featured: true,
+    date: "2026-10",
+  },
+  {
+    id: "student-budget-tracker",
+    title: "Student Budget & Expense Tracker",
+    description: "Financial tracking and visualization platform tailored for student budgets with category analytics and goal tracking.",
+    longDescription: "Integrates Supabase for PostgreSQL relational data modeling and Row Level Security. Provides dynamic charting and budget variance notifications.",
+    technologies: ["Next.js", "Supabase", "PostgreSQL", "Tailwind CSS"],
+    category: "Full-Stack",
+    liveUrl: "#",
+    githubUrl: "https://github.com",
+    imageUrl: "/images/projects/budget.png",
+    featured: true,
+    date: "2026-11",
+  },
+  {
+    id: "campus-marketplace",
+    title: "Campus Marketplace & Real-Time Chat",
+    description: "Peer-to-peer exchange platform for campus textbooks, electronics, and supplies with direct buyer-seller messaging.",
+    longDescription: "Full-stack application incorporating real-time websockets/subscriptions, file storage for item media, and verified student profiles.",
+    technologies: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
+    category: "Full-Stack",
+    liveUrl: "#",
+    githubUrl: "https://github.com",
+    imageUrl: "/images/projects/marketplace.png",
+    featured: true,
+    date: "2026-12",
+  },
+];

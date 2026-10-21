@@ -7,12 +7,12 @@ import { Menu, X, Code2 } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Education", href: "#education" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/#about" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Blog", href: "/#blog" },
+  { label: "Education", href: "/#education" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export function Navbar() {
@@ -65,7 +65,7 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
             <a
-              href="#contact"
+              href="/#contact"
               className="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-xl text-white bg-blue-600 hover:bg-blue-700 transition-colors shadow-sm"
             >
               Hire Me
@@ -96,7 +96,7 @@ export function Navbar() {
           ))}
           <div className="pt-2">
             <a
-              href="#contact"
+              href="/#contact"
               onClick={() => setIsOpen(false)}
               className="w-full inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium rounded-xl text-white bg-blue-600 hover:bg-blue-700 transition-colors"
             >

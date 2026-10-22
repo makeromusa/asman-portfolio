@@ -14,9 +14,10 @@
   <meta property="og:description" content="Computer Science student at University of Nairobi specializing in low-level systems programming, AI workflows, and modern data architectures.">
   <meta property="og:type" content="website">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Favicons - Personalized AM Monogram -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -55,6 +56,10 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <button id="theme-toggle-nav" class="theme-toggle-nav d-none d-md-inline-flex" title="Toggle Dark/Light Mode" aria-label="Toggle dark/light theme">
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
 
     </div>
   </header>
@@ -647,6 +652,11 @@
 
   </footer>
 
+  <!-- Floating Dark/Light Mode Switcher -->
+  <button id="theme-toggle" class="theme-toggle-floating" title="Toggle Dark/Light Mode" aria-label="Toggle dark/light mode">
+    <i class="bi bi-moon-stars-fill"></i>
+  </button>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -716,6 +726,57 @@
     })();
   </script>
 
+  <!-- Theme Switcher Script -->
+  <script>
+    (function () {
+      const themeToggleBtns = [document.getElementById('theme-toggle'), document.getElementById('theme-toggle-nav')].filter(Boolean);
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      const storedTheme = localStorage.getItem('theme');
+
+      function setTheme(theme) {
+        if (theme === 'dark') {
+          document.body.classList.add('dark-mode');
+          themeToggleBtns.forEach(btn => {
+            const icon = btn.querySelector('i');
+            if (icon) {
+              icon.className = 'bi bi-sun-fill';
+            }
+          });
+        } else {
+          document.body.classList.remove('dark-mode');
+          themeToggleBtns.forEach(btn => {
+            const icon = btn.querySelector('i');
+            if (icon) {
+              icon.className = 'bi bi-moon-stars-fill';
+            }
+          });
+        }
+      }
+
+      if (storedTheme) {
+        setTheme(storedTheme);
+      } else if (prefersDark.matches) {
+        setTheme('dark');
+      } else {
+        setTheme('light');
+      }
+
+      themeToggleBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          const isDark = document.body.classList.contains('dark-mode');
+          const nextTheme = isDark ? 'light' : 'dark';
+          setTheme(nextTheme);
+          localStorage.setItem('theme', nextTheme);
+        });
+      });
+
+      prefersDark.addEventListener('change', e => {
+        if (!localStorage.getItem('theme')) {
+          setTheme(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>

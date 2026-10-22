@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - DevFolio Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Agentic FPL Manager — Case Study | Asman Makero Musa</title>
+  <meta name="description" content="Technical Case Study for Agentic FPL Manager: an enterprise-grade AI tactical copilot and game-theory mini-league optimization platform architected by Asman Makero Musa.">
+  <meta name="keywords" content="Agentic FPL, Fantasy Premier League AI, Google Gemini, Multi-Agent Systems, Game Theory, Asman Makero Musa">
+  <meta name="author" content="Asman Makero Musa">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Favicons - Personalized AM Monogram -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -26,14 +28,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="portfolio-details-page">
@@ -42,38 +36,25 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">DevFolio</h1>
+        <h1 class="sitename">Asman Musa</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#resume">Experience</a></li>
+          <li><a href="index.html#portfolio" class="active">Projects</a></li>
+          <li><a href="index.html#certifications">Certifications</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <button id="theme-toggle-nav" class="theme-toggle-nav d-none d-md-inline-flex" title="Toggle Dark/Light Mode" aria-label="Toggle dark/light theme">
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
 
     </div>
   </header>
@@ -81,24 +62,26 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
+    <div class="page-title py-4 bg-light border-bottom" data-aos="fade">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <h1 class="mb-2 mb-lg-0 fw-bold">Agentic FPL Manager — Technical Case Study</h1>
         <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html#portfolio">Projects</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Agentic FPL Manager</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
     <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+    <section id="portfolio-details" class="portfolio-details section py-5">
 
       <div class="container" data-aos="fade-up">
 
-        <div class="portfolio-details-slider swiper init-swiper">
+        <!-- Swiper Screenshot Carousel -->
+        <div class="portfolio-details-slider swiper init-swiper rounded-4 shadow-sm overflow-hidden mb-5">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -118,22 +101,19 @@
               }
             }
           </script>
+
           <div class="swiper-wrapper align-items-center">
 
             <div class="swiper-slide">
-              <img src="assets/img/portfolio/app-1.jpg" alt="">
+              <img src="assets/img/portfolio/agentic-fpl.png" class="img-fluid w-100" alt="Pitch & Squad View with AI Copilot">
             </div>
 
             <div class="swiper-slide">
-              <img src="assets/img/portfolio/product-1.jpg" alt="">
+              <img src="assets/img/portfolio/agentic-fpl-rival.png" class="img-fluid w-100" alt="Rival Spy & Mini-League Game-Theory Catch-Up">
             </div>
 
             <div class="swiper-slide">
-              <img src="assets/img/portfolio/branding-1.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/books-1.jpg" alt="">
+              <img src="assets/img/portfolio/agentic-fpl-horizon.png" class="img-fluid w-100" alt="5-Gameweek Horizon & Chip Trajectory Planner">
             </div>
 
           </div>
@@ -142,52 +122,111 @@
           <div class="swiper-pagination"></div>
         </div>
 
-        <div class="row justify-content-between gy-4 mt-4">
+        <div class="row justify-content-between gy-4">
 
+          <!-- Main Case Study Content -->
           <div class="col-lg-8" data-aos="fade-up">
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio details</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-              <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
+            <div class="portfolio-description pe-lg-4">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="badge bg-primary">Full-Stack &amp; AI</span>
+                <span class="badge bg-success"><i class="bi bi-broadcast me-1"></i> Live on Vercel</span>
+                <span class="badge bg-dark">Premier League Official Tokens</span>
+              </div>
+
+              <h2 class="fw-bold mb-3">Next-Generation Fantasy Premier League Tactical Intelligence</h2>
+
+              <p class="lead text-secondary">
+                An enterprise-grade, agentic intelligence platform engineered to replace subjective intuition with game-theory mini-league optimization, multi-gameweek transfer trajectories, and a real-time conversational AI tactical copilot.
               </p>
 
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <div>
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
+              <hr class="my-4">
+
+              <h3 class="fw-bold mb-3"><i class="bi bi-bullseye text-primary me-2"></i>Executive Problem Statement</h3>
+              <p>
+                Fantasy Premier League (FPL) is played by over 11 million global managers. Traditional companion apps are static number calculators that lack contextual understanding of mini-league game theory, rotation risk patterns ("Pep Roulette"), and long-term transfer horizon planning.
+              </p>
+              <p>
+                <strong>Agentic FPL Manager</strong> was architected from the ground up to solve this through autonomous agentic evaluation, strict system prompt constraints, and structured interaction protocols powered by Google Gemini.
+              </p>
+
+              <h3 class="fw-bold mt-4 mb-3"><i class="bi bi-diagram-3 text-primary me-2"></i>System Architecture &amp; Key Features</h3>
+
+              <div class="row gy-3 my-2">
+                <div class="col-md-6">
+                  <div class="p-3 border rounded-3 bg-white h-100 shadow-sm">
+                    <h5 class="fw-bold text-primary"><i class="bi bi-cpu me-2"></i>AI Tactical Copilot</h5>
+                    <p class="small text-muted mb-0">Powered by Google Gemini with structured tool calling. Ingests live player metrics, fixture difficulty ratings, and returns deterministic transfer feasibility advice.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 border rounded-3 bg-white h-100 shadow-sm">
+                    <h5 class="fw-bold text-primary"><i class="bi bi-shield-shaded me-2"></i>Mini-League "Rival Spy"</h5>
+                    <p class="small text-muted mb-0">Computes Effective Ownership (EO) across competitive mini-leagues. Formulates differential captaincy recommendations to mathematically swing point deficits against league leaders.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 border rounded-3 bg-white h-100 shadow-sm">
+                    <h5 class="fw-bold text-primary"><i class="bi bi-graph-up-arrow me-2"></i>5-Gameweek Horizon Engine</h5>
+                    <p class="small text-muted mb-0">Multi-week roadmap evaluating rolling free transfers vs point hits (-4), and model-driven chip deployment windows (Wildcard, Free Hit, Bench Boost, Triple Captain).</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 border rounded-3 bg-white h-100 shadow-sm">
+                    <h5 class="fw-bold text-primary"><i class="bi bi-dribbble me-2"></i>Interactive Visual Pitch</h5>
+                    <p class="small text-muted mb-0">Dynamic formation detector (3-5-2, 4-3-3, 3-4-3) with real-time captain/vice-captain badges, injury alert flags, and detailed player performance popups.</p>
+                  </div>
                 </div>
               </div>
 
+              <h3 class="fw-bold mt-4 mb-3"><i class="bi bi-code-slash text-primary me-2"></i>Engineering Stack &amp; Deployment</h3>
               <p>
-                Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
-              </p>
-
-              <p>
-                Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
+                The frontend is built with <strong>Next.js 15 (App Router)</strong>, <strong>React 19</strong>, and <strong>TypeScript</strong> for end-to-end type safety. Styling strictly adheres to official Premier League and FPL design token guidelines via <strong>Tailwind CSS</strong>. Relational data schemas and player history are persisted in <strong>PostgreSQL</strong>, deployed continuously with automated GitHub Actions and Vercel Edge networks.
               </p>
 
             </div>
           </div>
 
-          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong> Web design</li>
-                <li><strong>Client</strong> ASU Company</li>
-                <li><strong>Project date</strong> 01 March, 2020</li>
-                <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-                <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+          <!-- Project Metadata Sidebar -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info p-4 bg-white rounded-4 border shadow-sm sticky-top" style="top: 100px;">
+              <h3 class="fw-bold mb-3 pb-2 border-bottom">Project Metadata</h3>
+              <ul class="list-unstyled mb-4">
+                <li class="py-2 d-flex justify-content-between border-bottom">
+                  <strong>Role / Author:</strong> <span>Asman Makero Musa</span>
+                </li>
+                <li class="py-2 d-flex justify-content-between border-bottom">
+                  <strong>Category:</strong> <span>Agentic AI &amp; Web Platform</span>
+                </li>
+                <li class="py-2 d-flex justify-content-between border-bottom">
+                  <strong>Deployment:</strong> <span class="badge bg-success">Live on Vercel</span>
+                </li>
+                <li class="py-2 d-flex justify-content-between border-bottom">
+                  <strong>Database:</strong> <span>PostgreSQL (Supabase)</span>
+                </li>
+                <li class="py-2 d-flex justify-content-between border-bottom">
+                  <strong>AI Engine:</strong> <span>Google Gemini (Tool Calling)</span>
+                </li>
+                <li class="py-2 d-flex justify-content-between border-bottom">
+                  <strong>Frontend:</strong> <span>Next.js 15 • React 19 • TS</span>
+                </li>
+                <li class="py-2 d-flex justify-content-between">
+                  <strong>Live Domain:</strong> <a href="https://agentic-fpl.vercel.app" target="_blank" class="text-primary text-truncate ms-2">agentic-fpl.vercel.app</a>
+                </li>
               </ul>
+
+              <div class="d-grid gap-2">
+                <a href="https://agentic-fpl.vercel.app" target="_blank" class="btn btn-primary rounded-pill py-2.5 fw-semibold d-flex align-items-center justify-content-center gap-2 shadow-sm">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                  <span>Launch Live Platform</span>
+                </a>
+                <a href="https://github.com/makeromusa/agentic-fpl" target="_blank" class="btn btn-outline-secondary rounded-pill py-2.5 fw-semibold d-flex align-items-center justify-content-center gap-2">
+                  <i class="bi bi-github"></i>
+                  <span>View GitHub Repository</span>
+                </a>
+                <a href="index.html#portfolio" class="btn btn-link text-decoration-none text-muted text-center pt-2">
+                  <i class="bi bi-arrow-left me-1"></i> Back to All Projects
+                </a>
+              </div>
             </div>
           </div>
 
@@ -200,27 +239,26 @@
   </main>
 
   <footer id="footer" class="footer accent-background">
-
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Asman Makero Musa</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/makeromusa" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/asman-musa-872405371" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:makeromusa17@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+        <a href="tel:+254743844451" title="Phone"><i class="bi bi-telephone-fill"></i></a>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      <div class="credits text-center mt-2">
+        <span>AI &amp; Software Engineering Specialist | Nairobi, Kenya</span>
       </div>
     </div>
-
   </footer>
+
+  <!-- Floating Dark/Light Mode Switcher -->
+  <button id="theme-toggle" class="theme-toggle-floating" title="Toggle Dark/Light Mode" aria-label="Toggle dark/light mode">
+    <i class="bi bi-moon-stars-fill"></i>
+  </button>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -230,18 +268,64 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Theme Switcher Script -->
+  <script>
+    (function () {
+      const themeToggleBtns = [document.getElementById('theme-toggle'), document.getElementById('theme-toggle-nav')].filter(Boolean);
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      const storedTheme = localStorage.getItem('theme');
+
+      function setTheme(theme) {
+        if (theme === 'dark') {
+          document.body.classList.add('dark-mode');
+          themeToggleBtns.forEach(btn => {
+            const icon = btn.querySelector('i');
+            if (icon) {
+              icon.className = 'bi bi-sun-fill';
+            }
+          });
+        } else {
+          document.body.classList.remove('dark-mode');
+          themeToggleBtns.forEach(btn => {
+            const icon = btn.querySelector('i');
+            if (icon) {
+              icon.className = 'bi bi-moon-stars-fill';
+            }
+          });
+        }
+      }
+
+      if (storedTheme) {
+        setTheme(storedTheme);
+      } else if (prefersDark.matches) {
+        setTheme('dark');
+      } else {
+        setTheme('light');
+      }
+
+      themeToggleBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          const isDark = document.body.classList.contains('dark-mode');
+          const nextTheme = isDark ? 'light' : 'dark';
+          setTheme(nextTheme);
+          localStorage.setItem('theme', nextTheme);
+        });
+      });
+
+      prefersDark.addEventListener('change', e => {
+        if (!localStorage.getItem('theme')) {
+          setTheme(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+  </script>
 
 </body>
 

@@ -330,26 +330,56 @@
 
             <!-- Featured Project: Agentic FPL Manager -->
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-ai filter-apps">
-              <div class="card h-100 border-0 shadow-sm p-4">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge bg-primary">Featured • 2026</span>
-                  <small class="text-muted"><i class="bi bi-cpu"></i> Agentic AI Platform</small>
+              <div class="card h-100 border-0 shadow-sm overflow-hidden d-flex flex-column">
+                <div class="position-relative overflow-hidden" style="max-height: 250px;">
+                  <a href="assets/img/portfolio/agentic-fpl.png" class="glightbox" data-gallery="agentic-fpl-gallery" title="Agentic FPL Manager - Football Pitch &amp; AI Tactical Copilot">
+                    <img src="assets/img/portfolio/agentic-fpl.png" class="img-fluid w-100" alt="Agentic FPL Platform" style="object-fit: cover; object-position: top; max-height: 250px; transition: transform 0.4s ease;">
+                  </a>
+                  <span class="position-absolute top-0 start-0 m-3 badge bg-success shadow-sm"><i class="bi bi-broadcast me-1"></i> Live on Vercel</span>
+                  <a href="assets/img/portfolio/agentic-fpl.png" class="glightbox position-absolute bottom-0 end-0 m-3 btn btn-sm btn-dark bg-opacity-75 rounded-pill text-white" data-gallery="agentic-fpl-gallery" title="Zoom Screenshot"><i class="bi bi-arrows-fullscreen"></i> Gallery (3)</a>
+                  <!-- Hidden extra gallery slides for interactive walkthrough -->
+                  <a href="assets/img/portfolio/agentic-fpl-rival.png" class="glightbox d-none" data-gallery="agentic-fpl-gallery" title="Mini-League Rival Intelligence &amp; Game-Theory Catch-Up Analysis"></a>
+                  <a href="assets/img/portfolio/agentic-fpl-horizon.png" class="glightbox d-none" data-gallery="agentic-fpl-gallery" title="5-Gameweek Horizon &amp; Chip Trajectory Planner"></a>
                 </div>
-                <div class="d-flex justify-content-between align-items-start">
-                  <h4 class="mb-1">Agentic FPL Manager</h4>
-                  <a href="https://github.com/makeromusa/agentic-fpl" target="_blank" class="text-primary fs-5" title="View Source on GitHub"><i class="bi bi-github"></i></a>
-                </div>
-                <h6 class="text-secondary mb-3">Enterprise FPL Intelligence &amp; AI Tactical Copilot</h6>
-                <p class="text-muted">
-                  An enterprise-grade Fantasy Premier League platform featuring game-theory mini-league optimization, visual pitch Starting XI, 5-gameweek transfer trajectory engine, and conversational AI tactical copilot powered by Google Gemini with structured tool calling.
-                </p>
-                <div class="tech-badges">
-                  <span class="tech-tag">Next.js 15</span>
-                  <span class="tech-tag">React 19</span>
-                  <span class="tech-tag">TypeScript</span>
-                  <span class="tech-tag">Google Gemini AI</span>
-                  <span class="tech-tag">PostgreSQL</span>
-                  <span class="tech-tag">Tailwind CSS</span>
+
+                <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                  <div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <span class="badge bg-primary bg-opacity-10 text-primary fw-semibold">Premier League • AI Platform</span>
+                      <small class="text-muted"><i class="bi bi-circle-fill text-success" style="font-size: 8px;"></i> Production Ready</small>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start">
+                      <h4 class="mb-1 fw-bold">Agentic FPL Manager</h4>
+                    </div>
+
+                    <h6 class="text-secondary mb-2 small fw-semibold">Game-Theory &amp; Multi-Agent Tactical Optimizer</h6>
+
+                    <p class="text-muted small mb-3">
+                      Enterprise-grade Fantasy Premier League intelligence platform featuring interactive football pitch Starting XI, mini-league "Rival Spy" effective ownership calculation, 5-gameweek transfer trajectory engine, and conversational AI tactical copilot powered by Google Gemini with tool calling.
+                    </p>
+
+                    <div class="tech-badges mb-3">
+                      <span class="tech-tag">Next.js 15</span>
+                      <span class="tech-tag">React 19</span>
+                      <span class="tech-tag">TypeScript</span>
+                      <span class="tech-tag">Google Gemini AI</span>
+                      <span class="tech-tag">PostgreSQL</span>
+                      <span class="tech-tag">Tailwind CSS</span>
+                      <span class="tech-tag">Vercel</span>
+                    </div>
+                  </div>
+
+                  <div class="pt-3 border-top d-flex gap-2 align-items-center">
+                    <a href="https://agentic-fpl.vercel.app" target="_blank" class="btn btn-sm btn-primary rounded-pill px-3 py-1.5 d-inline-flex align-items-center gap-1.5 shadow-sm">
+                      <i class="bi bi-box-arrow-up-right"></i>
+                      <span>Try Live App</span>
+                    </a>
+                    <a href="https://github.com/makeromusa/agentic-fpl" target="_blank" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1.5 d-inline-flex align-items-center gap-1.5 ms-auto">
+                      <i class="bi bi-github"></i>
+                      <span>Source Code</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div><!-- End Project Item -->

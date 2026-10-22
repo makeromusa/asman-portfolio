@@ -8,7 +8,7 @@ export const projects: Project[] = [
     longDescription: "Engineered from formal requirements gathering to system design, component breakdown, and automated deployment. Features dark/light theming, modular UI architecture, and type-safe data modeling.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
     category: "Full-Stack",
-    liveUrl: "https://vercel.com",
+    liveUrl: "https://makeromusa.me",
     githubUrl: "https://github.com",
     imageUrl: "/images/projects/portfolio.png",
     featured: true,

@@ -12,10 +12,20 @@ export function HeroSection() {
       <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-indigo-500/10 dark:bg-indigo-600/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-4xl mx-auto text-center z-10">
+        {/* Profile Avatar with glowing border */}
+        <div className="relative mx-auto mb-6 w-32 h-32 sm:w-40 sm:h-40 rounded-full p-1 bg-gradient-to-tr from-blue-600 via-indigo-500 to-cyan-400 shadow-xl shadow-blue-500/25">
+          <img
+            src={siteConfig.avatar}
+            alt={siteConfig.name}
+            className="w-full h-full object-cover rounded-full bg-slate-100 dark:bg-slate-800"
+          />
+          <div className="absolute bottom-1 right-2 w-5 h-5 rounded-full bg-emerald-500 ring-4 ring-white dark:ring-slate-900" title="Available for projects" />
+        </div>
+
         {/* Status / Role pill */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-900/60 text-blue-700 dark:text-blue-300 text-xs sm:text-sm font-medium mb-8">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-900/60 text-blue-700 dark:text-blue-300 text-xs sm:text-sm font-medium mb-6">
           <Terminal className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-          <span>Available for New Roles & Engineering Projects</span>
+          <span>Available for Roles &amp; AI Engineering Projects</span>
         </div>
 
         {/* Main Title & Headline */}

@@ -757,32 +757,33 @@
           sentMsg.classList.remove('d-block');
 
           const formData = new FormData(form);
+          const object = Object.fromEntries(formData);
+          const json = JSON.stringify(object);
 
-          // Submit to Formspree endpoint or fallback to mailto
-          fetch(form.action, {
+          fetch('https://api.web3forms.com/submit', {
             method: 'POST',
-            body: formData,
             headers: {
+              'Content-Type': 'application/json',
               'Accept': 'application/json'
-            }
+            },
+            body: json
           })
-          .then(response => {
+          .then(async (response) => {
+            const data = await response.json();
             loading.classList.remove('d-block');
-            if (response.ok) {
+            if (response.status === 200 && data.success) {
+              sentMsg.textContent = "Thank you! Your message has been sent successfully. I will get back to you shortly.";
               sentMsg.classList.add('d-block');
               form.reset();
             } else {
-              // Graceful mailto fallback if endpoint not yet activated
-              window.location.href = `mailto:makeromusa17@gmail.com?subject=${encodeURIComponent(formData.get('subject') || 'Portfolio Contact')}&body=${encodeURIComponent('From: ' + formData.get('name') + ' (' + formData.get('email') + ')\n\n' + formData.get('message'))}`;
-              sentMsg.textContent = "Opening your email client to send the message...";
-              sentMsg.classList.add('d-block');
+              errorMsg.textContent = data.message || "Failed to deliver message. Please try again.";
+              errorMsg.classList.add('d-block');
             }
           })
-          .catch(err => {
+          .catch((error) => {
             loading.classList.remove('d-block');
-            window.location.href = `mailto:makeromusa17@gmail.com?subject=${encodeURIComponent(formData.get('subject') || 'Portfolio Contact')}&body=${encodeURIComponent('From: ' + formData.get('name') + ' (' + formData.get('email') + ')\n\n' + formData.get('message'))}`;
-            sentMsg.textContent = "Opening your email client to send the message...";
-            sentMsg.classList.add('d-block');
+            errorMsg.textContent = "Network error. Please reach out directly to makeromusa17@gmail.com.";
+            errorMsg.classList.add('d-block');
           });
         });
       }

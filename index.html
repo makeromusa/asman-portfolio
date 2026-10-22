@@ -447,23 +447,53 @@
               </div>
             </div><!-- End Project Item -->
 
-            <!-- Project 4 -->
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-apps">
-              <div class="card h-100 border-0 shadow-sm p-4">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge bg-primary">2026</span>
-                  <small class="text-muted"><i class="bi bi-bar-chart-line"></i> Streamlit &amp; ML</small>
+            <!-- Project 4: Football Wrapped (Bundesliga Wrapped) -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-apps filter-data">
+              <div class="card h-100 border-0 shadow-sm overflow-hidden d-flex flex-column">
+                <div class="position-relative overflow-hidden" style="max-height: 250px;">
+                  <a href="assets/img/portfolio/bundesliga-wrapped.png" class="glightbox" data-gallery="bundesliga-gallery" title="Football Wrapped - Highlights &amp; YouTube Data API">
+                    <img src="assets/img/portfolio/bundesliga-wrapped.png" class="img-fluid w-100" alt="Football Wrapped Platform" style="object-fit: cover; object-position: top; max-height: 250px; transition: transform 0.4s ease;">
+                  </a>
+                  <span class="position-absolute top-0 start-0 m-3 badge bg-danger shadow-sm"><i class="bi bi-play-circle me-1"></i> Streamlit Cloud</span>
+                  <a href="assets/img/portfolio/bundesliga-wrapped.png" class="glightbox position-absolute bottom-0 end-0 m-3 btn btn-sm btn-dark bg-opacity-75 rounded-pill text-white" data-gallery="bundesliga-gallery" title="Zoom Screenshots"><i class="bi bi-arrows-fullscreen"></i> Gallery (3)</a>
+                  <!-- Extra gallery images -->
+                  <a href="assets/img/portfolio/bundesliga-standings.png" class="glightbox d-none" data-gallery="bundesliga-gallery" title="League Table &amp; Standings via Football-Data API"></a>
+                  <a href="assets/img/portfolio/bundesliga-matches.png" class="glightbox d-none" data-gallery="bundesliga-gallery" title="Match Results, Scores &amp; Form Tracker"></a>
                 </div>
-                <h4 class="mb-2">Interactive Sports Analytics ("Bundesliga Wrapped")</h4>
-                <h6 class="text-secondary mb-3">Streamlit Web Application</h6>
-                <p class="text-muted">
-                  Built and deployed an interactive web application leveraging Streamlit to visualize complex sports data and analytics. Integrated backend analytical scripts with a user-friendly frontend interface for real-time statistical generation.
-                </p>
-                <div class="tech-badges">
-                  <span class="tech-tag">Streamlit</span>
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Data Visualization</span>
-                  <span class="tech-tag">Machine Learning</span>
+
+                <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                  <div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <span class="badge bg-danger bg-opacity-10 text-danger fw-semibold">Sports Analytics &amp; Media</span>
+                      <small class="text-muted"><i class="bi bi-circle-fill text-success" style="font-size: 8px;"></i> Live App</small>
+                    </div>
+
+                    <h4 class="mb-1 fw-bold">Football Wrapped ("Bundesliga Wrapped")</h4>
+                    <h6 class="text-secondary mb-2 small fw-semibold">Multi-League Intelligence &amp; Video Highlight Aggregator</h6>
+
+                    <p class="text-muted small mb-3">
+                      Data-driven sports analytics application integrating the Football-Data.org API and YouTube Data API v3. Features real-time match results, league standings, team overviews, top scorer leaderboards, and automated query filtering to curate top 10 official match video highlights without gaming noise.
+                    </p>
+
+                    <div class="tech-badges mb-3">
+                      <span class="tech-tag">Streamlit</span>
+                      <span class="tech-tag">Python</span>
+                      <span class="tech-tag">Football-Data API</span>
+                      <span class="tech-tag">YouTube Data API v3</span>
+                      <span class="tech-tag">Pandas</span>
+                    </div>
+                  </div>
+
+                  <div class="pt-3 border-top d-flex gap-2 align-items-center">
+                    <a href="https://bundesligawrapped.streamlit.app" target="_blank" class="btn btn-sm btn-primary rounded-pill px-3 py-1.5 d-inline-flex align-items-center gap-1.5 shadow-sm">
+                      <i class="bi bi-box-arrow-up-right"></i>
+                      <span>Try Live App</span>
+                    </a>
+                    <a href="https://github.com/makeromusa/bundesliga" target="_blank" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1.5 d-inline-flex align-items-center gap-1.5 ms-auto">
+                      <i class="bi bi-github"></i>
+                      <span>Source Code</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div><!-- End Project Item -->

@@ -1748,6 +1748,14 @@ section,
   margin-bottom: 4px;
 }
 
+.certifications .cert-card .cert-actions {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+body.dark-mode .certifications .cert-card .cert-actions {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
 /* Project Tech Badges */
 .tech-badges {
   display: flex;

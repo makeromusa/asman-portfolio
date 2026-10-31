@@ -210,11 +210,11 @@ def build_cv(output_pdf_path):
     story.extend(section_header("Professional Profile", space_before=1))
     profile_p = (
         "Analytical Computer Science undergraduate at the University of Nairobi specializing in low-level systems programming (C/C++), "
-        "applied artificial intelligence, and scalable data architectures. Experienced in architecting Retrieval-Augmented Generation "
-        "(RAG) engines, autonomous multi-agent tactical decision copilots, and cloud integrations with schema-enforced tool calling. "
-        "Demonstrated expertise in mathematical optimization (linear algebra, probability, multivariate calculus), relational database "
-        "design (3NF), and LLM benchmarking. Driven to design robust, high-performance software systems and data-driven AI solutions "
-        "in fast-paced, high-impact engineering environments."
+        "applied artificial intelligence, and scalable cloud architectures. Microsoft Certified in Azure Fundamentals (AZ-900). "
+        "Experienced in architecting Retrieval-Augmented Generation (RAG) engines, autonomous multi-agent tactical decision copilots, "
+        "and production cloud services with schema-enforced tool calling. Demonstrated expertise in mathematical optimization "
+        "(linear algebra, probability, multivariate calculus), relational database design (3NF), and LLM benchmarking. Driven to design "
+        "robust, high-performance software systems and data-driven AI solutions in fast-paced engineering environments."
     )
     story.append(Paragraph(profile_p, summary_style))
 
@@ -266,8 +266,8 @@ def build_cv(output_pdf_path):
             Paragraph("Python (FastAPI, PyPDF, Streamlit, Pandas, NumPy), C, C++ (Cisco Advanced Certified), SQL (PostgreSQL, Oracle, SQL Server), JavaScript / TypeScript (Next.js 15).", skills_val_style)
         ],
         [
-            Paragraph("Databases &amp; Vector Stores:", skills_label_style),
-            Paragraph("ChromaDB, Supabase (pgvector), PostgreSQL, Oracle Database, SQL Server, 3NF Relational Architecture, Data Pipeline Design.", skills_val_style)
+            Paragraph("Cloud &amp; Vector Stores:", skills_label_style),
+            Paragraph("Microsoft Azure (AZ-900 Certified), ChromaDB, Supabase (pgvector), PostgreSQL, Oracle Database, SQL Server, 3NF Relational Architecture, Data Pipeline Design.", skills_val_style)
         ],
         [
             Paragraph("Systems, Linux &amp; Tools:", skills_label_style),
@@ -312,7 +312,7 @@ def build_cv(output_pdf_path):
         "automated multi-choice practice exams with distractor justifications, and high-yield revision cheat sheets.",
         bullet_style
     ))
-    story.append(Spacer(1, 3))
+    story.append(Spacer(1, 2.5))
 
     # Project 2: Agentic FPL Manager
     p2_head = [
@@ -358,7 +358,7 @@ def build_cv(output_pdf_path):
     story.append(t_p3)
     story.append(Paragraph(
         "&bull; Engineered an intelligent cloud exam preparation suite integrating active recall flashcards, 3D flip card mechanics, and Leitner "
-        "spaced-repetition algorithms to accelerate cloud certification pass rates.",
+        "spaced-repetition algorithms to accelerate cloud certification pass rates (built and validated while earning Microsoft Azure Fundamentals certification).",
         bullet_style
     ))
     story.append(Paragraph(
@@ -370,7 +370,7 @@ def build_cv(output_pdf_path):
         "&bull; Developed full-stack PostgreSQL/Supabase schema supporting real-time student quiz diagnostics, answer review history, and domain readiness scores.",
         bullet_style
     ))
-    story.append(Spacer(1, 4))
+    story.append(Spacer(1, 2.5))
 
     # Project 4: Bundesliga Wrapped & Data Analytics
     p4_head = [
@@ -391,7 +391,7 @@ def build_cv(output_pdf_path):
         "&bull; Designed responsive data filtering, statistical aggregation charts, and deployed the application live on Streamlit Cloud.",
         bullet_style
     ))
-    story.append(Spacer(1, 4))
+    story.append(Spacer(1, 2.5))
 
     # Project 5: Systems Programming C/C++
     p5_head = [
@@ -415,7 +415,7 @@ def build_cv(output_pdf_path):
     ))
 
     # --- 6. PROFESSIONAL EXPERIENCE ---
-    story.extend(section_header("Professional Experience", space_before=4))
+    story.extend(section_header("Professional Experience", space_before=3))
     exp_head = [
         [
             Paragraph("<b>Equity Bank Kenya</b> &mdash; Nairobi, Kenya", item_title_style),
@@ -444,9 +444,13 @@ def build_cv(output_pdf_path):
     ))
 
     # --- 7. VERIFIED CERTIFICATIONS & ACCREDITATIONS ---
-    story.extend(section_header("Verified Certifications &amp; Accreditations", space_before=4))
+    story.extend(section_header("Verified Certifications &amp; Accreditations", space_before=3))
     
     certs_data = [
+        [
+            Paragraph("&bull; <b>Microsoft Certified: Azure Fundamentals (AZ-900):</b> Cloud concepts, Azure architecture, security, privacy, compliance &amp; governance. ID: B489EE0F3C55EFF8.", skills_val_style),
+            Paragraph("<i>Microsoft (Nov 2026)</i>", item_meta_style)
+        ],
         [
             Paragraph("&bull; <b>AWS &amp; Udacity AI Practitioner Challenge:</b> Foundation models, Amazon Bedrock, LLM benchmarking &amp; fine-tuning.", skills_val_style),
             Paragraph("<i>Udacity &amp; AWS (2026)</i>", item_meta_style)
@@ -472,7 +476,7 @@ def build_cv(output_pdf_path):
             Paragraph("<i>Cisco &amp; OpenEDG (2025)</i>", item_meta_style)
         ]
     ]
-    t_certs = Table(certs_data, colWidths=[400, 140])
+    t_certs = Table(certs_data, colWidths=[405, 135])
     t_certs.setStyle(TableStyle([
         ('VALIGN', (0,0), (-1,-1), 'TOP'),
         ('BOTTOMPADDING', (0,0), (-1,-1), 1),

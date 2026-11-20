@@ -193,8 +193,8 @@ def build_monochrome_one_page_cv(output_path):
     # Project 1: EduRAG Scholar
     p1_row = [
         [
-            Paragraph("<b>EduRAG Scholar</b> &nbsp;|&nbsp; <i>Next.js 15, ChromaDB, Gemini AI, TypeScript, Vercel</i>", item_title),
-            Paragraph("<a href='https://learningassistant-chi.vercel.app'>Live Demo</a> &nbsp;|&nbsp; <a href='https://github.com/makeromusa/edurag-scholar'>GitHub</a>", item_right)
+            Paragraph("<b>EduRAG Scholar</b> &nbsp;|&nbsp; <i>FastAPI, Next.js 14, Supabase pgvector, MongoDB Atlas, Azure OpenAI GPT-4o</i>", item_title),
+            Paragraph("<a href='https://edurag.tech'>edurag.tech</a> &nbsp;|&nbsp; <a href='https://github.com/makeromusa/edurag-scholar'>GitHub</a>", item_right)
         ]
     ]
     t_p1 = Table(p1_row, colWidths=[380, content_width - 380])
@@ -206,9 +206,9 @@ def build_monochrome_one_page_cv(output_path):
         ('BOTTOMPADDING', (0,0), (-1,-1), 1),
     ]))
     story.append(t_p1)
-    story.append(Paragraph("• Engineered an academic Retrieval-Augmented Generation (RAG) platform indexing 7 core University of Nairobi Computer Science units.", bullet_style))
-    story.append(Paragraph("• Implemented dense vector embeddings using ChromaDB and cosine similarity retrieval; optimized text-chunk boundaries on complex lecture notes to prevent hallucinated academic proofs and definitions.", bullet_style))
-    story.append(Paragraph("• Deployed responsive serverless architecture on Vercel with structured source-attribution citation chips for auditability.", bullet_style))
+    story.append(Paragraph("• Built a live academic AI platform for University of Nairobi Chiromo BSc. CS students — indexes 7 CS units (lecture slides, past papers, syllabi) into a citable knowledge engine backed by Supabase pgvector.", bullet_style))
+    story.append(Paragraph("• Implemented slide-aware chunk boundaries to preserve mathematical derivation continuity; tri-engine routing (Azure OpenAI GPT-4o primary, Gemini fallback, Tavily gap-search) generates answers citing exact slide pages, not training weights.", bullet_style))
+    story.append(Paragraph("• Shipped KaTeX multi-step calculus typesetting, an autonomous 3 AM exam brief daemon, and a past paper trend predictor that surfaces high-probability Section A topics before university finals.", bullet_style))
     story.append(Spacer(1, 2))
 
     # Project 2: Agentic FPL Manager
